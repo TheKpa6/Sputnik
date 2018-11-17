@@ -1,0 +1,16 @@
+﻿Сборка начата 04.09.2017 23:34:19.
+     1>Проект "F:\Downloads\Downloads\ИНФОРМАТИКА САНИ(1)\ИНФОРМАТИКА САНИ\4 семестр\Новая папка\New Folder\Raketa\Sputnik\Sputnic.vcxproj" в узле 2 (целевые объекты Build).
+     1>ResourceCompile:
+         C:\Program Files (x86)\Windows Kits\8.1\bin\x86\rc.exe /D _VC80_UPGRADE=0x0700 /l"0x0409" /nologo /fo"Debug\Sputnic.res" Sputnic.rc 
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"Debug\Sputnic.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"Debug\Sputnic.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"Debug\Sputnic.lib" /MACHINE:X86 /SAFESEH Debug\Sputnic.res
+         Debug\Kosmos.obj
+         Debug\MathRect.obj
+         Debug\Sputnic.obj
+         Debug\stdafx.obj
+         Sputnic.vcxproj -> F:\Downloads\Downloads\ИНФОРМАТИКА САНИ(1)\ИНФОРМАТИКА САНИ\4 семестр\Новая папка\New Folder\Raketa\Sputnik\Debug\Sputnic.exe
+     1>Сборка проекта "F:\Downloads\Downloads\ИНФОРМАТИКА САНИ(1)\ИНФОРМАТИКА САНИ\4 семестр\Новая папка\New Folder\Raketa\Sputnik\Sputnic.vcxproj" завершена (целевые объекты Build).
+
+Сборка успешно завершена.
+
+Затраченное время: 00:00:03.28

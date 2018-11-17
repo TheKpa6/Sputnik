@@ -1,0 +1,280 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "windows.h"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+#include "resource.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Russian (Russia) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_RUS)
+LANGUAGE LANG_RUSSIAN, SUBLANG_DEFAULT
+#pragma code_page(1251)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDC_HELLO MENU
+BEGIN
+    MENUITEM "Пуск",                        IDM_PUSK
+    MENUITEM "Графики",                     IDM_GRAFIC
+    MENUITEM "Параметры",                   IDM_PARAM
+    POPUP "&Справка"
+    BEGIN
+        MENUITEM "&О Програме ...     F1",      IDM_ABOUT
+    END
+    MENUITEM "Выход     Esc",               IDM_EXIT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 22, 17, 228, 167
+STYLE DS_SETFONT | DS_MODALFRAME | WS_CAPTION | WS_SYSMENU
+CAPTION "About"
+FONT 8, "System", 0, 0, 0x0
+BEGIN
+    ICON            IDI_HELLO,IDC_MYICON,12,12,20,20
+    CTEXT           "Запуск космического спутника одноступенчатой ракетой-носителем на заданную элиптическую орбиту.",IDC_STATIC,46,6,138,30,SS_NOPREFIX | WS_BORDER
+    PUSHBUTTON      "OK",IDOK,126,96,96,66
+    LTEXT           "Запуск проводится в экваториальной плоскости Земли. Ракета находится на высоте 100 км и имеет заданную начальную скорость направленную под углом  к горизонту.",IDC_STATIC,6,42,216,48,SS_NOPREFIX | SS_SUNKEN
+    GROUPBOX        "Студент:",IDC_STATIC,6,96,114,48
+    CTEXT           "Азаров Сергей",IDC_STATIC,36,108,60,12
+    LTEXT           "группа 05164",IDC_STATIC,12,132,106,8
+END
+
+IDD_GRAFIC DIALOGEX 397, 65486, 275, 354
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOPMOST | WS_EX_TOOLWINDOW
+CAPTION "Графики"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CTEXT           "Радиус-вектор",IDC_PAINT,5,20,265,100,WS_BORDER,WS_EX_DLGMODALFRAME
+    CTEXT           "Скорость",IDC_PAINT_SPEED,5,135,265,100,WS_BORDER,WS_EX_DLGMODALFRAME
+    CTEXT           "Энергия",IDC_PAINT_ENERGY,5,249,265,100,WS_BORDER,WS_EX_DLGMODALFRAME
+    CTEXT           "Кинетическая энергия Eк(t)",IDC_STATIC,50,121,174,14
+    CTEXT           "Потенциальня энергия Eп(t)",IDC_STATIC,51,6,174,14
+    CTEXT           "Полня энергия E(t)",IDC_STATIC,51,235,174,14
+END
+
+IDD_MAIN_DLG DIALOGEX 0, 338, 597, 68
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "Параметры"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_V0,42,12,36,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_A0,42,29,36,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_X0,42,48,36,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_A,114,22,48,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_B,113,41,48,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_VUVOD,222,12,36,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SHAG,222,30,36,12,ES_AUTOHSCROLL
+    CONTROL         "Шаг по времени",IDC_SHAG_VREMA,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,186,48,72,12
+    EDITTEXT        IDC_M_T,312,12,36,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_M_S,312,30,36,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_S_G,312,48,36,12,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "Ввод",IDOK,543,11,50,14
+    PUSHBUTTON      "Пауза",IDC_PAUSE,543,27,50,14
+    PUSHBUTTON      "Закрыть",IDCANCEL,543,43,50,14
+    CONTROL         "Упадет на Землю",IDC_ERROR,"Button",BS_AUTOCHECKBOX | BS_CENTER | BS_VCENTER | BS_MULTILINE,485,21,51,25,WS_EX_DLGMODALFRAME
+    EDITTEXT        IDC_RADIUS,406,22,50,12,ES_AUTOHSCROLL | NOT WS_TABSTOP
+    EDITTEXT        IDC_V,407,40,49,12,ES_AUTOHSCROLL | NOT WS_TABSTOP
+    GROUPBOX        "Полуоси эллипса",IDC_STATIC,101,2,73,64
+    GROUPBOX        "Начальные условия",IDC_STATIC,2,2,94,64
+    CTEXT           "Высота",IDC_STATIC,6,48,30,8
+    CTEXT           "Скорость",IDC_STATIC,6,12,35,12
+    CTEXT           "Угол",IDC_STATIC,12,31,24,12
+    GROUPBOX        "Параметры ракеты",IDC_STATIC,270,2,96,64
+    CTEXT           "Масса топлива",IDC_STATIC,276,12,30,16
+    CTEXT           "Скорость газов",IDC_STATIC,273,48,37,16
+    CTEXT           "Горение топлива",IDC_STATIC,275,30,31,16
+    CTEXT           "км",IDC_STATIC,78,48,12,12
+    CTEXT           "м/с",IDC_STATIC,78,12,15,12
+    GROUPBOX        "Параметры вывода",IDC_STATIC,179,2,85,64
+    LTEXT           "Скорость",IDC_STATIC,186,12,36,12
+    LTEXT           "Шаг",IDC_STATIC,186,30,18,12
+    RTEXT           "кг",IDC_STATIC,348,12,12,12
+    RTEXT           "кг/с",IDC_STATIC,348,30,15,12
+    RTEXT           "м/с",IDC_STATIC,348,48,12,12
+    LTEXT           "a",IDC_STATIC,104,22,8,8
+    LTEXT           "b",IDC_STATIC,105,43,8,8
+    CTEXT           "км",IDC_STATIC,161,22,11,12
+    CTEXT           "км",IDC_STATIC,162,41,11,12
+    CTEXT           "Радиус",IDC_STATIC,376,22,30,8
+    CTEXT           "Скорость",IDC_STATIC,373,41,35,8
+    CTEXT           "км",IDC_STATIC,457,22,12,12
+    CTEXT           "м/с",IDC_STATIC,456,40,18,12
+    GROUPBOX        "Состояние",IDC_STATIC,370,2,109,64
+END
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+    END
+
+    IDD_GRAFIC, DIALOG
+    BEGIN
+        LEFTMARGIN, 5
+        RIGHTMARGIN, 270
+        TOPMARGIN, 6
+        BOTTOMMARGIN, 349
+        HORZGUIDE, 20
+        HORZGUIDE, 135
+        HORZGUIDE, 249
+    END
+
+    IDD_MAIN_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 2
+        RIGHTMARGIN, 595
+        TOPMARGIN, 2
+        BOTTOMMARGIN, 66
+        HORZGUIDE, 22
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+//IDB_ZEMLA               BITMAP                  "bitmap1.bmp"
+IDB_SPUTNIC             BITMAP                  "bitmap2.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDS_APP_TITLE           "Запуск космического спутника на орбиту"
+    IDS_HELLO               "Hello World!"
+    IDC_HELLO               "HELLO"
+END
+
+#endif    // Russian (Russia) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Neutral (Sys. Default) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_NEUSD)
+LANGUAGE LANG_NEUTRAL, SUBLANG_SYS_DEFAULT
+#pragma code_page(1251)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDC_HELLO ACCELERATORS
+BEGIN
+    VK_F2,          ID_PARAM2,              VIRTKEY, NOINVERT
+    VK_F3,          ID_PARAM3,              VIRTKEY, NOINVERT
+    VK_F4,          ID_PARAM4,              VIRTKEY, NOINVERT
+    VK_F1,          IDM_ABOUT,              VIRTKEY, NOINVERT
+    VK_ESCAPE,      IDM_EXIT,               VIRTKEY, NOINVERT
+END
+
+#endif    // Neutral (Sys. Default) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (United States) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+2 TEXTINCLUDE 
+BEGIN
+    "#define APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""windows.h""\r\n"
+    "#undef APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""resource.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_HELLO               ICON                    "Sputnic.ICO"
+IDI_SMALL               ICON                    "SMALL.ICO"
+#endif    // English (United States) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
